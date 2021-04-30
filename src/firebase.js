@@ -6,12 +6,16 @@ import firebase from "firebase";
 const firebaseConfig = {
   apiKey: "AIzaSyCe_IcSW7vaLGvKvVE4FU8CI4le-BUBq4o",
   authDomain: "clone-ec084.firebaseapp.com",
+  databaseURL: "https://clone-ec084-default-rtdb.firebaseio.com",
   projectId: "clone-ec084",
   storageBucket: "clone-ec084.appspot.com",
   messagingSenderId: "439656751970",
   appId: "1:439656751970:web:2977cb60d862335cb8823b",
   measurementId: "G-FEDTSGVTLY"
 };
+
+
+
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 

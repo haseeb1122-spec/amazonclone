@@ -1,11 +1,15 @@
-import React from 'react';
+
 import './CheckoutProduct.css';
 import StarIcon from '@material-ui/icons/Star';
 import { useStateValue } from "./StateProvider";
+// import Increment from './Increment';
+import React, { Component } from 'react';
+
 
 
 
 function CheckoutProduct({id, image, title, price, rating}) {
+ 
     const[{ basket }, dispatch] = useStateValue();
 
 const removeFromBasket = () => {
@@ -32,6 +36,7 @@ const removeFromBasket = () => {
                   <p className='rating_icon'><StarIcon /></p>
               ))}
         </div>
+         {/* <Increment /> */}
         <button className="checkoutProduct_remove" onClick={removeFromBasket}>Remove from Basket</button>
       </div>
     </div>
